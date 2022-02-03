@@ -717,7 +717,7 @@ header .circle {
 .skills {
   margin: 1.5rem 0 2.5rem 0;
   max-height: 210px;
-  overflow-y: hiddden;
+  overflow: hiddden;
   padding: 10px;
   border-radius: 15px;
   border-bottom: 1px dotted var(--main-color);
