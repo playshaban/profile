@@ -1878,6 +1878,7 @@ header .circle {
   {
     width: 100%;
     flex-direction: column;
+    gap: 20px;
   }
   .card-wrap
   {
@@ -1886,8 +1887,17 @@ header .circle {
   }
   .container
   {
-    
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .records
+  {
+    width: 100%;
+    margin: 0  auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .container .grid-item
   {
@@ -2089,12 +2099,13 @@ header .circle {
     
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    width: 100%;
+    
     gap:20px;
   }
   .contact-box {
     grid-template-columns: 1fr;
-    padding: 3.2rem 2.7rem;
+    
   }
 
   .contact-info {
