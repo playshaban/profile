@@ -370,7 +370,7 @@ nav.open .links {
     margin:10px;
     animation: list_sliding 5s ease-in-out alternate-reverse infinite;
     
-    color: greenyellow;
+    color: yellow;
     
     
     
@@ -1488,24 +1488,49 @@ header .circle {
   {
     width: 100%;
     margin: 0  auto;
-    padding: 10px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+  .records .container
+  {
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .records .container .wrap 
+
+  {
+     width: 40%;
+  }
+
   .contact
   {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin: 0 auto;
+    
   }
-  .contact .container
+  .contact .container .contact-box
   {
     width: 100%;
-    overflow: hidden;
-    padding: 10px;
+    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 
+  }
+  .contact .text, p
+  {
+    font-size: 1rem;
+  }
+  .information-wrap .info-text
+  {
+    font-size: 1rem;
   }
 
   .text {
@@ -1924,8 +1949,29 @@ header .circle {
   }
 }
 
-@media (max-width: 850px) {
-
+@media screen and (max-width: 850px) {
+   .services .container .cards
+   {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+   }
+   .services .cards, .services .cards .card-wrap
+   {
+     margin: 0 auto;
+     width: 100%;
+     
+     
+   }
+   .services .cards .card-wrap .card
+   {
+     
+     margin: 0 auto;
+     
+     
+   }
   
   .container .grid-item
   {
