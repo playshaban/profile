@@ -5,8 +5,10 @@ const records_wrap = document.querySelector(".records");
 const records_numbers = document.querySelectorAll(".number");
 const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
-const navbar = document.querySelector("header nav");
+const navbar = document.querySelector("nav");
 const links = document.querySelectorAll(".links a");
+
+
 
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
@@ -99,3 +101,13 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
   },
 });
+
+
+$(function(){
+
+  $(".about").hover(function()
+  {
+    $("svg").show();
+  });
+
+  });
