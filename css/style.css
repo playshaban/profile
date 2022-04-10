@@ -797,6 +797,7 @@ header .circle {
 }
 .about .container2 .outer
 {
+ 
    height: 160px;
    width:160px;
   padding: 10px;
@@ -821,6 +822,11 @@ header .circle {
   box-shadow: inset 5px 5px 20px -10px rgb(0, 0, 0), inset -5px -5px 20px -10px rgba(255, 255, 255, 0.404) ;
 
 }
+.container2 svg
+{
+  display: block;
+}
+
 
 .about .container2 #number
 {
@@ -829,16 +835,17 @@ header .circle {
 
 .about .container2 circle 
 {
+
   fill : none;
   stroke: url(#GradientColor);
   stroke-width: 15;
   stroke-dasharray: 472;
-  stroke-dashoffset: 165;
+
 }
 
 #circleht
 {
-  animation: 2s ht;
+  animation: 5s ht 5;
   stroke-dashoffset: 80;
 }
 @keyframes ht
@@ -851,7 +858,7 @@ header .circle {
 
 #circlecss
 {
-  animation: 2s css;
+  animation:5s css 5;
   stroke-dashoffset: 70;
 }
 @keyframes css
@@ -863,7 +870,7 @@ header .circle {
 }
 #circlejs
 {
-  animation: 2s js;
+  animation: 5s js 5;
   stroke-dashoffset: 100;
 }
 @keyframes js
@@ -875,7 +882,7 @@ header .circle {
 }
 #circlejq
 {
-  animation: 2s jq;
+  animation: 5s jq 5;
   stroke-dashoffset: 100;
 }
 @keyframes jq
@@ -888,7 +895,7 @@ header .circle {
 
 #circleaj
 {
-  animation: 2s aj;
+  animation: 5s aj 5;
   stroke-dashoffset: 100;
 }
 @keyframes aj
@@ -901,7 +908,7 @@ header .circle {
 
 #circleph
 {
-  animation: 2s ph;
+  animation: 5s ph 5;
   stroke-dashoffset: 160;
 }
 @keyframes ph
@@ -914,7 +921,7 @@ header .circle {
 
 #circlems
 {
-  animation: 2s ph;
+  animation: 5s ms 5;
   stroke-dashoffset: 100;
 }
 @keyframes ms
@@ -927,7 +934,7 @@ header .circle {
 
 #circlerj
 {
-  animation: 2s rj;
+  animation:5s rj 5;
   stroke-dashoffset: 160;
 }
 @keyframes rj
@@ -939,7 +946,8 @@ header .circle {
 }
 #circlecp
 {
-  animation: 2s cp;
+  animation: 5s cp 5 ;
+  
   stroke-dashoffset: 100;
 }
 @keyframes cp
@@ -952,8 +960,9 @@ header .circle {
 
 #circlepy
 {
-  animation: 2s py;
+  animation: 5s py 5;
   stroke-dashoffset:80;
+  
 }
 @keyframes py
 {
