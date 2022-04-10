@@ -975,11 +975,14 @@ header .circle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap:20px;
 }
 .sections .fiveelements
 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap:20px;
 }
 /* End of radial progress loader*/
 
