@@ -1,6 +1,6 @@
 const filter_btns = document.querySelectorAll(".filter-btn");
 const skills_wrap = document.querySelector(".skills");
-const skills_bars = document.querySelectorAll(".skill-progress");
+const skills_bars = skills_wrap.querySelectorAll("svg");
 const records_wrap = document.querySelector(".records");
 const records_numbers = document.querySelectorAll(".number");
 const footer_input = document.querySelector(".footer-input");
@@ -55,18 +55,29 @@ $(".grid").isotope({
 window.addEventListener("scroll", () => {
   skillsEffect();
   countUp();
+  checkScroll(skills_wrap)
 });
 
 function checkScroll(el) {
   let rect = el.getBoundingClientRect();
-  if (window.innerHeight >= rect.top + el.offsetHeight) return true;
+  if (window.innerHeight >= rect.top + el.offsetHeight)
+  {
+    
+    return true;
+  } 
   return false;
 }
 
 function skillsEffect() {
   if (!checkScroll(skills_wrap)) return;
-  skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
+  else 
+  {
+    $("svg").show();
+  }
+  
 }
+
+
 
 function countUp() {
   if (!checkScroll(records_wrap)) return;
@@ -100,17 +111,4 @@ var mySwiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
     nextEl: ".swiper-button-next",
   },
-});
-
-
-$(function(){
-
-  $(".about").hover(function(){
-   $("svg").show();
-  });
-
-  $(".about").onclick(function(){
-    $("svg").show();
-  });
-
 });
