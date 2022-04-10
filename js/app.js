@@ -105,9 +105,12 @@ var mySwiper = new Swiper(".swiper-container", {
 
 $(function(){
 
-  $(".about").hover(function()
-  {
+  $(".about").hover(function(){
+   $("svg").show();
+  });
+
+  $(".about").onclick(function(){
     $("svg").show();
   });
 
-  });
+});
