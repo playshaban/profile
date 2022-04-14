@@ -243,9 +243,23 @@ nav .container {
   align-items: center;
 }
 
-.logo img 
+.logo
 {
-  width: 200px;
+  
+  width: 10%;
+  height: 100px;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap:10px;
+}
+.logo img
+{
+  width: 50%;
+  margin: 0 auto;
 }
 
 
@@ -1807,12 +1821,6 @@ header .circle {
     padding-bottom: 1.5rem;
   }
 
-  .logo {
-    
-    width: 1px;
-    
-  }
-
   .links a {
     font-size: 0.8rem;
     padding: 0.65rem 0.7rem;
@@ -2126,6 +2134,14 @@ header .circle {
 }
 
 @media screen and (max-width: 850px) {
+  
+  .logo 
+  {
+    width: 20%;
+  }
+
+
+
    .services .container .cards
    {
      width: 100%;
@@ -2252,31 +2268,8 @@ header .circle {
     left: 13%;
   }
 
-  header .triangle {
-    right: 14%;
-    bottom: 63%;
-  }
-
-  header .points2 {
-    width: 280px;
-    bottom: -10px;
-    left: 60%;
-  }
-
-  header .xshape {
-    left: 90%;
-    top: 54%;
-  }
-
-  .grid-item {
-    width: 50%;
-  }
-
-  .gallery-image {
-    height: 210px;
-    max-width: 270px;
-  }
-
+  
+  
   .background-bg {
     height: 340px;
   }
