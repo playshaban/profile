@@ -498,13 +498,13 @@ header .circle {
   position: relative;
   width: 100%;
   max-width: 390px;
-  min-height: 520px;
+  min-height: 420px;
   background-color: var(--light-three);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 20px;
   overflow: hidden;
   transition: 0.3s;
 }
