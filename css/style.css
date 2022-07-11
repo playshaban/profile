@@ -1355,6 +1355,7 @@ header .circle {
 .information {
   display: flex;
   align-items: center;
+  word-break: break-all;
 }
 
 .information:not(:last-child) {
@@ -2026,7 +2027,7 @@ header .circle {
   }
 
   .contact {
-    padding: 9rem 0 6rem 0;
+    padding:0;
   }
 
   .contact-form {
