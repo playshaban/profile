@@ -406,7 +406,11 @@ nav.open .links {
 
 
 .header-content .image .img-element {
-  max-width: 750px;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  border:1px solid white;
+  background-color:var(--main-color);
 }
 
 header .points1 {
@@ -856,11 +860,12 @@ header .circle {
   stroke-dasharray: 472;
 
 }
-
+/* Circle skill loader */
 #circleht
 {
   animation: 5s ht;
-  stroke-dashoffset: 80;
+  stroke-dashoffset: 0;
+  
 }
 @keyframes ht
 {
@@ -873,7 +878,7 @@ header .circle {
 #circlecss
 {
   animation:5s css;
-  stroke-dashoffset: 70;
+  stroke-dashoffset: 0;
 }
 @keyframes css
 {
@@ -885,7 +890,7 @@ header .circle {
 #circlejs
 {
   animation: 5s js;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
 }
 @keyframes js
 {
@@ -897,7 +902,7 @@ header .circle {
 #circlejq
 {
   animation: 5s jq;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
 }
 @keyframes jq
 {
@@ -910,7 +915,7 @@ header .circle {
 #circleaj
 {
   animation: 5s aj;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
 }
 @keyframes aj
 {
@@ -923,7 +928,7 @@ header .circle {
 #circleph
 {
   animation: 5s ph;
-  stroke-dashoffset: 160;
+  stroke-dashoffset: 0;
 }
 @keyframes ph
 {
@@ -936,7 +941,7 @@ header .circle {
 #circlems
 {
   animation: 5s ms ;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
 }
 @keyframes ms
 {
@@ -949,7 +954,7 @@ header .circle {
 #circlerj
 {
   animation:5s rj;
-  stroke-dashoffset: 160;
+  stroke-dashoffset: 70;
 }
 @keyframes rj
 {
