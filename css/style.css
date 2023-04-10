@@ -805,6 +805,17 @@ header .circle {
 }
 
 /* staring radial progress loader*/
+.about .container2 .sections
+{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-auto-rows: auto ;
+
+  width: 100%;
+  
+}
+
+
 .about .container2 .skills
 {
  height: 160px;
