@@ -92,7 +92,7 @@ function countUp() {
         numb.innerText = currentNum + increment;
         setTimeout(updateCount, 1);
       } else {
-        numb.innerText = maxNum;
+        numb.innerText = maxNum+'+' ;
       }
     };
 
