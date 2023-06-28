@@ -33,7 +33,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body oncontextmenu="rightClick()">
+  <body>
     <main>
       <header id="header">
         <nav>
@@ -796,7 +796,7 @@
             I am happy to join as a full time Web Developer, anywhere in India.
             Download my resume.
           </p>
-          <a href="ResumeShabanKhanSelf.pdf" class="btn" download>Resume</a>
+          <a href="shaban.khan.self.pdf" class="btn" target="_blank">Resume</a>
         </div>
       </section>
     </main>
@@ -912,8 +912,8 @@
     <script src="./js/app.js"></script>
   </body>
   <script>
-    function rightClick() {
-      alert(" ⚠️ Right click is BANNED by Shaban Khan ⚠️");
-    }
+    window.addEventListener("contextmenu", (e) => {e.preventDefault(); 
+                                                  alert("Right Click is disabled ");
+                                                  });
   </script>
 </html>
