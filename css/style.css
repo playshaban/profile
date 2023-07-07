@@ -556,6 +556,7 @@ header .circle {
 .card .text {
   font-size: 1.15rem;
   margin: 1.8rem 0;
+  text-align: justify;
 }
 
 .services .points1 {
