@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shaban Khan</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="icon" type="image/png" href="playshaban.png" />
 
@@ -18,16 +17,18 @@
   <meta name="author" content="Shaban Khan" />
   <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7583737718527780"
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <main>
+
+
+   <!-- Loading Animation Loads here  -->
+   <div class="loading">
+    <span class="circle"><img src="loading.jpeg" alt=""></span>
+  </div>
+  <div class="playshaban loading-wait">
+ 
+  <main class="">
     <header id="header"  >
       <nav>
         <div class="container topcontainer">
@@ -110,7 +111,7 @@
             </div>
           </div>
 
-          <div class="column-2 image" data-aos="fade-left">
+          <div class="column-2 image">
             <img src="./img/shapes/points2.png" class="points points2" alt="" />
             <img src="shabankhan.png" alt="shaban khan pic" title="A.I Portrait of Shaban Khan"
               class="img-element z-index" alt="" />
@@ -127,7 +128,7 @@
         </div>
 
         <div class="cards">
-          <div class="card-wrap" data-aos="fade-up">
+          <div class="card-wrap" >
             <img src="./img/shapes/points3.png" class="points points1 points-sq" alt="" />
 
             <div class="card" data-card="WEB">
@@ -145,7 +146,7 @@
           </div>
 
           <div class="card-wrap">
-            <div class="card" data-card="APP" data-aos="fade-up">
+            <div class="card" data-card="APP" >
               <div class="card-content z-index">
                 <img src="ser2.PNG" class="icon" alt="" />
 
@@ -160,7 +161,7 @@
           </div>
 
           <div class="card-wrap">
-            <div class="card" data-card="INVEST" data-aos="fade-up">
+            <div class="card" data-card="INVEST" >
               <div class="card-content z-index">
                 <img src="ser3.PNG" class="icon" alt="" />
                 <h3 class="title-sm">Investments</h3>
@@ -187,7 +188,7 @@
         </div>
 
         <div class="section-body grid-2">
-          <div class="column-1" data-aos="slide-right">
+          <div class="column-1">
             <div class="row1">
               <h3 class="title-sm">Hello, I'm</h3>
               <p class="text">
@@ -677,7 +678,7 @@
       </div>
     </div>
   </footer>
-
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -688,30 +689,16 @@
     e.preventDefault();
     alert("Right Click is disabled ");
   });
+
+  
 </script>
 <script>
-  AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
+setTimeout(()=>
+  {
+    document.querySelector('.loading').style.display ="none";
+    document.querySelector('.playshaban').classList.remove('loading-wait');
+  },5000);
 </script>
 
 </html>
