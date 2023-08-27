@@ -1090,20 +1090,24 @@ header .circle {
 /* Records */
 
 .records {
-  position: relative;
   background-image:var(--theme);
   padding: 5.2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .records .container {
   display: flex;
   margin: 40px;
-  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   text-align: center;
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .record-circle {
@@ -1412,10 +1416,6 @@ header .circle {
   padding-right: 2rem;
 }
 
-.contact-form {
-  padding-left: 2rem;
-}
-
 .contact-info .title:after {
   left: 0;
   transform: initial;
@@ -1469,6 +1469,7 @@ header .circle {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-column-gap: 0.6rem;
+  box-sizing: border-box;
 }
 
 .contact-input {
@@ -1503,6 +1504,21 @@ header .circle {
 
 .contact-input .btn {
   margin-top: 0.6rem;
+}
+
+
+.response 
+{
+  display: none;
+  background: green;
+  text-align: center;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(0px,-50px);
+  width: 40%;
+  box-sizing: border-box;
 }
 
 /* End Contact */
@@ -1713,7 +1729,7 @@ header .circle {
 
 /* Responsive */
 
-@media screen and  (max-width: 500px) {
+@media screen and  (max-width: 600px) {
 
   
   .container
@@ -1743,29 +1759,11 @@ header .circle {
     margin: 0 auto;
   }
 
-  .records
-  {
-    width: 100%;
-    margin: 0  auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
   .records .container
   {
-    padding: 30px;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    overflow: visible;
   }
-  .records .container .wrap 
-
-  {
-     width: 40%;
-  }
-
+  
   .contact
   {
     width: 100%;
@@ -2208,6 +2206,15 @@ header .circle {
 }
 
 @media screen and (max-width: 850px) {
+
+  .container
+  {
+    width: 100%;
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
   
   .logo 
   {
@@ -2431,7 +2438,21 @@ header .circle {
     padding: 30px;
     display: flex;
     flex-direction: column;
-
+    box-sizing: border-box;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-box form 
+  {
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .contact .response 
+  {
+    position: relative;
+    width: 100%;
   }
   .contact .text, p
   {
