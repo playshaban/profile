@@ -91,7 +91,10 @@
                 <p>Investor</p>
               </div>
               <div class="socials">
-                <a href="https://www.hackerrank.com/playshaban/" target="_blank">
+                <a href="https://auth.geeksforgeeks.org/user/playshaban/" target="_blank">
+                  <img src="img/gfg.svg" style="width: 50px;" alt="">
+                </a>
+                <a href="https://www.hackerrank.com/proshaban/" target="_blank">
                   <i class="fab fa-hackerrank"></i>
                 </a>
 
@@ -111,7 +114,7 @@
 
             <div class="column-2 image">
               <img src="./img/shapes/points2.png" class="points points2" alt="" />
-              <img src="shabankhan.png" alt="shaban khan pic" title="A.I Portrait of Shaban Khan"
+              <img src="person_02.PNG" alt="shaban khan pic" title="A.I Portrait of Shaban Khan"
                 class="img-element z-index" alt="" />
             </div>
           </div>
@@ -734,10 +737,11 @@
   });
 </script>
 <script>
-  setTimeout(() => {
+
+  document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".loading").style.display = "none";
     document.querySelector(".playshaban").classList.remove("loading-wait");
-  }, 5000);
+});
 </script>
 
 </html>
