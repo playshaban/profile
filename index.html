@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/portfolio.css">
   <meta charset="UTF-8" />
   <meta name="description" content="Play Shaban " />
   <meta name="keywords"
@@ -468,6 +469,78 @@
           </div>
         </div>
       </section>
+
+  <!--  --------------------------------------------------------------------------- -->
+ 
+
+      <section class="portfolio-custom">
+        <div
+          class="container2"
+          style="padding: 20px; display: flex; flex-direction: column"
+        >
+          <div class="section-header">
+            <h3 class="title" data-title="My Project">Porfolio</h3>
+          </div>
+          <span style="text-align: center;">These projects are hosted on free hosting services , and may not open in regular browser or can show security threat. <br>
+            These demo sites are safe. And In case this of error, switch to other browser or incognito mode.
+          </span>
+          <div class="projects">
+            <div class="box" style="background-image: url(./img/cargo.png);">
+              <div class="info">
+                <h1>Car-Go (Rent Car)</h1>
+                <p>Full Stack App for renting cars, with admin functionality</p>
+                <p><b>Stack</b> HTML, CSS , JS, PHP , MySQL</p>
+                <a href="http://car-go.42web.io/" target="_blank" class="proBtn">View Demo</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(./img/todo.png);">
+              <div class="info">
+                <h1>To Do App (MERN)</h1>
+                <p>Full Stack App for taking records of tasks to do. Multi-user.</p>
+                <p><b>Stack</b> HTML, CSS , JS ,React Js , Node Js , Express Js, JWT Auth, API, MongoDB </p>
+                <a href="https://todoapp-puce-alpha.vercel.app/notes" target="_blank" class="proBtn">View Demo</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(./img/cbb.png);">
+              <div class="info">
+                <h1>Credit Bill Book</h1>
+                <p>Full Stack App for taking records of credits. Built for small businesss.</p>
+                <p><b>Stack</b> HTML, CSS , JS , PHP , MySQL </p>
+                <a href="http://creditbillbook.42web.io/" target="_blank" class="proBtn">View Demo</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(./img/weathernow.png);">
+              <div class="info">
+                <h1>Weather Now</h1>
+                <p>React Js app for checking weather information.</p>
+                <p><b>Stack</b> HTML, CSS , JS , React Js , REST API </p>
+                <a href="https://playshaban.github.io/weathernow/" target="_blank" class="proBtn">View Demo</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(./img/privateapp.png);">
+              <div class="info">
+                <h1>Private Chat App</h1>
+                <p>Realtime Chat App . Multi-user</p>
+                <p><b>Stack</b> HTML, CSS , JS , Ajax, PHP, MySQL</p>
+                <a href="http://privatechatapp.42web.io/" target="_blank" class="proBtn">View Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        $(".box").hover(
+          function () {
+            // Mouse enter function
+            $(this).find(".info").addClass("infoUp");
+          },
+          function () {
+            // Mouse leave function
+            $(this).find(".info").removeClass("infoUp");
+          }
+        );
+      </script>
+
       <!--  --------------------------------------------------------------------------- -->
       <section class="records">
         <div class="overlay overlay-sm">

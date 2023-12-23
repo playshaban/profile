@@ -1,0 +1,98 @@
+
+.portfolio-custom .projects 
+{
+    background: rgb(230,230,230);
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-custom .projects .box 
+{
+    background: white;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: url('cargo.png');
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 2px;
+    box-sizing: border-box;
+    border:1px solid gray;
+    font-size:14px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    gap:0;
+    overflow:hidden;
+}
+.portfolio-custom .projects .box:hover 
+{
+    box-shadow: 0px 20px 25px black;
+    filter:brightness(95%);
+}
+.portfolio-custom .projects .box h1 
+{
+    background:white;
+    color:#784cfb;
+    text-align:center;
+    padding:0;
+    margin:0;
+    
+    width:100%;
+}
+.portfolio-custom .projects .info 
+{
+    background:#784cfbef;
+    text-align:justify;
+    transition:400ms ease-in-out;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding-bottom:10px;
+    gap:0;
+    box-sizing:border-box;
+    transform:translateY(160px);
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    & p 
+    {
+        padding:0px 3px;
+        color:white;
+    }
+}
+.portfolio-custom .projects .infoUp
+{
+    transform:translateY(0);
+}
+
+.portfolio-custom .projects .proBtn 
+{
+    text-align:center;
+    width:100px;
+    background:white;
+    color:#784cfb;
+    border:1px solid #784cfb;
+    margin:0 auto;
+    padding:2px;
+    border-radius:5px;
+    text-decoration:none;
+    
+}
+.portfolio-custom .projects .proBtn:hover
+{
+    background:#784cfb;
+    color:white;
+    border-color:white;
+}

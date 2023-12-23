@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="portfolio">
+      <div
+        class="container2"
+        style="padding: 20px; display: flex; flex-direction: column"
+      >
+        <div class="section-header">
+          <h3 class="title" data-title="My Project">Porfolio</h3>
+        </div>
+        <div class="projects">
+          <div class="box">
+            <div class="info">
+              <h1>Car-Go (Rent Car)</h1>
+              <p>Full Stack App for renting cars, with admin functionality</p>
+              <p><b>Stack</b> HTML, CSS , JS, PHP , MySQL</p>
+              <a href="http://car-go.42web.io/" class="proBtn">View Demo</a>
+            </div>
+          </div>
+          <div class="box" style="background-image: url(todo.png);">
+            <div class="info">
+              <h1>To Do App (MERN)</h1>
+              <p>Full Stack App for taking records of tasks to do. Multi-user.</p>
+              <p><b>Stack</b> HTML, CSS , JS ,React Js , Node Js , Express Js, JWT Auth, API, MongoDB </p>
+              <a href="https://todoapp-puce-alpha.vercel.app/notes" class="proBtn">View Demo</a>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(".box").hover(
+        function () {
+          // Mouse enter function
+          $(this).find(".info").addClass("infoUp");
+        },
+        function () {
+          // Mouse leave function
+          $(this).find(".info").removeClass("infoUp");
+        }
+      );
+    </script>
+  </body>
+</html>
