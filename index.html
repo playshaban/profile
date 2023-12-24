@@ -1123,6 +1123,8 @@
           $(".response").show();
           console.log(result);
         }
+
+        $(".contact-form").reset();
       } catch (error) {
         $(".response").css("background", "red");
         $(".response").html("Connection Faild");
