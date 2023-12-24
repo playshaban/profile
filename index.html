@@ -1124,7 +1124,7 @@
           console.log(result);
         }
 
-        $(".contact-form").reset();
+        $(".contact-form").get(0).reset();
       } catch (error) {
         $(".response").css("background", "red");
         $(".response").html("Connection Faild");
